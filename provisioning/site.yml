@@ -6,7 +6,6 @@
   roles:
     - geerlingguy.pip
     - ansible-role-unix-tools
-    #- ansible-role-prepare-nodes
     - ansible-role-download-k3s
 
 - hosts: master
