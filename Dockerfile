@@ -3,7 +3,7 @@
 # Adds Puppet, SSH daemon, Systemd
 # Adapted from https://github.com/BashtonLtd/docker-vagrant-images/blob/master/ubuntu1404/Dockerfile
 
-FROM ubuntu:20.04
+FROM ubuntu:latest
 ENV container docker
 RUN apt-get update -y && apt-get dist-upgrade -y
 

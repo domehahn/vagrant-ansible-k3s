@@ -3,6 +3,7 @@
   shell: |
     sudo apt-get update
     sudo apt-get -y install iproute2
+
 - name: Install curl
   shell: |
     sudo apt-get update
@@ -12,4 +13,14 @@
   shell: |
     sudo apt-get update
     sudo apt-get install iputils-ping
+
+- name: Install sshpass
+  shell: |
+    sudo apt-get update
+    sudo apt-get install sshpass
+
+- name: Install nano
+  shell: |
+    sudo apt-get update
+    sudo apt-get install nano
 ...

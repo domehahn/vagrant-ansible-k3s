@@ -4,17 +4,19 @@
   become: true
 
   roles:
-    - geerlingguy.pip
-    - ansible-role-unix-tools
-    - ansible-role-download-k3s
+    - { role: geerlingguy.pip }
+    - { role: ansible-role-unix-tools }
+    - { role: ansible-role-download-k3s }
 
-- hosts: master
-  become: true
-  roles:
-    - ansible-role-setup-k3s/master
+#- hosts: master
+#  gather_facts: true
+#  become: true
+#  roles:
+#    - {  role: ansible-role-setup-k3s/master }
 
-- hosts: node
-  become: true
-  roles:
-    - ansible-role-setup-k3s/agents
+#- hosts: node
+#  gather_facts: true
+#  become: true
+#  roles:
+#    - {  role: ansible-role-setup-k3s/agents }
 ...

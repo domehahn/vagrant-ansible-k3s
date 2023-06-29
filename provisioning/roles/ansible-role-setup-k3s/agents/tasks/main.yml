@@ -1,4 +1,8 @@
 ---
+- debug: msg={{ hostvars[groups['master'][0]].master_host | default(groups['master'][0]) }}
+
+- debug: msg={{ hostvars[groups['master'][0]].master_token }}
+
 - name: Copy K3s service file
   template:
     src: "k3s.service.j2"
